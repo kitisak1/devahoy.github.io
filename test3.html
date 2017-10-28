@@ -1,0 +1,70 @@
+<html >
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>จองตั๋วรถทัวร์ </title>
+  <script type="text/javascript">
+      function GoArriveTerminal(toast) {
+Android.showToast(toast);
+Android.hideMyWebView();
+      }
+  </script>
+</head>
+
+<body >
+
+  <div align="center" >
+    ราคา : <span id="price"></span><br>
+    <p>เลือกที่นั่ง</p><br><br>
+    <table>
+      <tr>
+          <td></button><br><br></td>
+        <td></button><br><br></td>
+        <td></button><br><br></td>
+        <td></button><br><br></td>
+          <td><button  value="คนขับ"  style="width:90px;height:40px"></button><br><br></td>
+        </tr>
+      <tr>
+          <td><button  value="คนขับ"  style="width:90px;height:40px"></button><br><br></td>
+        <td><button  value="คนขับ"  style="width:90px;height:40px"></button><br><br></td>
+        <td><button  value="คนขับ"  style="width:90px;height:40px"></button><br><br></td>
+        <td><button  value="คนขับ"  style="width:90px;height:40px"></button><br><br></td>
+          <td><button  value="คนขับ"  style="width:90px;height:40px"></button><br><br></td>
+        </tr>
+      <tr>
+        <td><button  value="คนขับ"  style="width:90px;height:40px"></button><br><br></td>
+      <td><button  value="คนขับ"  style="width:90px;height:40px"></button><br><br></td>
+      <td><button  value="คนขับ"  style="width:90px;height:40px"></button><br><br></td>
+      <td><button  value="คนขับ"  style="width:90px;height:40px"></button><br><br></td>
+        <td><button  value="คนขับ"  style="width:90px;height:40px"></button><br><br></td>
+      </tr>
+      <tr>
+        <td><button  value="คนขับ"  style="width:90px;height:40px"></button><br><br></td>
+      <td><button  value="คนขับ"  style="width:90px;height:40px"></button><br><br></td>
+      <td><button  value="คนขับ"  style="width:90px;height:40px"></button><br><br></td>
+      <td><button  value="คนขับ"  style="width:90px;height:40px"></button><br><br></td>
+        <td><button  value="คนขับ"  style="width:90px;height:40px"></button><br><br></td>
+          </tr>
+      <tr>
+        <td><button  value="คนขับ"  style="width:90px;height:40px"></button><br><br></td>
+      <td><button  value="คนขับ"  style="width:90px;height:40px"></button><br><br></td>
+      <td><button  value="คนขับ"  style="width:90px;height:40px"></button><br><br></td>
+      <td><button  value="คนขับ"  style="width:90px;height:40px"></button><br><br></td>
+        <td><button  value="คนขับ"  style="width:90px;height:40px"></button><br><br></td>
+        </tr>
+      </table>
+
+
+
+
+  <input type="button" value="เลือกใหม่"   onclick="window.open('index.html'),window.close()"style="width:90px;height:40px">
+<input type="button" value="ยืนยัน"   onClick="GoArriveTerminal(num)" style="width:90px;height:40px"/><br><br>
+          </div>
+
+    </body>
+    <script type="text/javascript">
+    var a = location.search.split("&");
+    var price = a[0].substring("?price=".length, a[0].length);
+    document.getElementById('price').innerHTML = decodeURIComponent(price);
+    </script>
+    </html>

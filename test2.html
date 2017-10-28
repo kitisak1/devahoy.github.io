@@ -1,0 +1,76 @@
+<html>
+<head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+</head>
+<body>
+
+  <div align="center">
+
+  ต้นทาง : <span id="spName"></span><span id="spEmail"></span><br>
+  ปลายทาง: <span id="spE"></span> <span id="s" ></span> <br />
+  วันที่เดินทาง: <span id="d"></span><br />
+  วันที่เดินทาง: <span id="dateback"></span><br />
+  จำนวน: <span id="number"></span> <br />
+
+  <p>เที่ยวการเดินรถ</p>
+  <form action="test3.html" >
+  <table>
+    <tr>
+        <td>เลือก</td>
+      <td>ชนิด</td>
+      <td>สาย</td>
+      <td>เวลา</td>
+        <td>ราคา</td>
+      </tr>
+    <tr>
+     <td><input type="radio" value="200"name="price"></td>
+      <td>01</td>
+      <td>กยบ</td>
+      <td>7.30</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td><input type="radio" value="100"name="price"   ></td>
+      <td>02</td>
+      <td>ขย</td>
+      <td>13.00</td>
+      <td>100</td>
+        </tr>
+    <tr>
+        <td><input type="radio" value="300"name="price"   ></td>
+      <td>03</td>
+      <td>มก</td>
+      <td>16.00</td>
+      <td>300</td>
+      </tr>
+    </table>
+  <br><br>
+  <input type="button" value="เลือกใหม่"   onclick="window.open('index.html'),window.close()"style="width:90px;height:40px">
+    <input type="submit" value="ยืนยัน"  style="width:90px;height:40px">
+  </div>
+</form >
+</body>
+
+
+<script type="text/javascript">
+var a = location.search.split("&");
+var num1 = a[0].substring("?departcity_mobile=".length, a[0].length);
+var num2 =a[1].substring("departterminal_mobile=".length, a[1].length);
+var num3 =a[2].substring("arrivecity_mobile=".length, a[2].length);
+var num4 = a[3].substring("arriveterminalDiv=".length, a[3].length );
+var num5 = a[4].substring("date=".length, a[4].length);
+var num6 = a[5].substring("dateback=".length, a[5].length);
+var num7 = a[6].substring("number=".length, a[6].length);
+
+document.getElementById('spName').innerHTML = decodeURIComponent(num1);
+document.getElementById('spEmail').innerHTML =decodeURIComponent(num2) ;
+document.getElementById('spE').innerHTML = decodeURIComponent(num3);
+document.getElementById('s').innerHTML = decodeURIComponent(num4);
+document.getElementById('d').innerHTML = decodeURIComponent(num5);
+document.getElementById('dateback').innerHTML = decodeURIComponent(num6);
+document.getElementById('number').innerHTML = decodeURIComponent(num7);
+</script>
+</html>
